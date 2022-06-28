@@ -19,7 +19,7 @@ public class ConnectorFactory {
         try {
             //-- Faculdade: jdbc:mysql://127.0.0.1:3306/BDVENDAS?useTimezone=true&serverTimezone=UTC
             //-- Casa: jdbc:mysql://servidor:3307/BDVENDAS?useTimezone=true&serverTimezone=UTC
-            return DriverManager.getConnection("jdbc:mysql://servidor:3307/BDVENDAS?useTimezone=true&serverTimezone=UTC", "teste", "123");
+            return DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/BDVENDAS?useTimezone=true&serverTimezone=UTC", "teste", "123");
 
         } catch (Exception erro) {
             throw new RuntimeException(erro);
