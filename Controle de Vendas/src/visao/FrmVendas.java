@@ -99,6 +99,11 @@ public class FrmVendas extends javax.swing.JFrame {
         );
 
         btncancelar.setText("CANCELAR VENDA");
+        btncancelar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btncancelarActionPerformed(evt);
+            }
+        });
 
         btnpagamento.setText("PAGAMENTO");
         btnpagamento.addActionListener(new java.awt.event.ActionListener() {
@@ -493,6 +498,12 @@ public class FrmVendas extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_btnpagamentoActionPerformed
 
+    private void btncancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btncancelarActionPerformed
+        
+        System.exit(0);
+        
+    }//GEN-LAST:event_btncancelarActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -557,12 +568,6 @@ public class FrmVendas extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
-    private javax.swing.JPanel jPanel7;
-    private javax.swing.JPanel jPanel8;
-    private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JScrollPane jScrollPane4;
-    private javax.swing.JTable tabelaHistorico;
-    private javax.swing.JTable tabelaHistorico1;
     private javax.swing.JTable tabelaItens;
     private javax.swing.JTextField txtcodigo;
     private javax.swing.JFormattedTextField txtcpf;
